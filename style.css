@@ -1,0 +1,92 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width:100%;
+    height:100%;
+}
+
+#main{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:100%;
+    background-color: rgb(237, 167, 209);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+#panel{
+    overflow: hidden;
+    width:80%;
+    height:80%;
+    background-color: white;
+    border-radius: 10px;
+    
+}
+
+#ptop{
+    padding: 0px 20%;
+    width:100%;
+    height:80px;
+    color:white;
+    background-color: rgb(247, 98, 214);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.elem{
+
+    display:flex;
+    gap:20px;
+    align-items: center;
+    
+}
+
+.elem h2{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.box{
+    padding:10px 25px;
+    background-color: white;
+    font-weight: 700;
+    font-size: 22px;
+    border-radius: 5px;
+    color: black;
+}
+
+#pbtm{
+    display: flex;
+    flex-wrap:wrap;/* by def value is no wrap so the elemsnts stay in one line here we are sending them to new line*/
+    gap:10px;
+    padding:20px 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    height: calc(100% - 80px);
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.bubble{
+    display:flex;
+    align-items: center;/*height wise*/
+    justify-content: center;/* width wise*/
+    width:35px;
+    height:35px;
+    background-color: rgb(238, 86, 208);
+    color: white;
+    border-radius:50px;
+}
+
+.bubble:hover{
+    background-color:rgb(112, 32, 95) ;
+    cursor:pointer;
+}
